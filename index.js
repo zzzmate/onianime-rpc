@@ -29,7 +29,7 @@ function createWindow() {
         display: none !important;
         pointer-events: none !important;
       }
-    `); // premium szolgaltatas frfr
+    `); // premium szolgaltatas frfr - vedd ki az iframet ha akarsz latni trailereket, etc
     updateDiscordStatus();
   });
 
@@ -116,3 +116,4 @@ app.on("window-all-closed", () => {
 app.on("activate", () => {
   if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
+
